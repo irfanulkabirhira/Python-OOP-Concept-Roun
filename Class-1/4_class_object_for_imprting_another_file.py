@@ -7,3 +7,5 @@ class Student:  # Class names should be in PascalCase
 
 obj = Student()  # Creating an instance
 print(obj.color)  # Accessing instance variable correctly
+
+
