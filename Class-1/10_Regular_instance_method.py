@@ -1,3 +1,9 @@
+'''
+
+Uses self as the first parameter.
+Can access and modify instance attributes.
+'''
+
 class Student:
     def __init__(self, name, age):
         self.name = name
