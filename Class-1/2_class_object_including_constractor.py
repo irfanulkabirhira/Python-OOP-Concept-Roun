@@ -13,6 +13,7 @@ class faculty:
 
 # Creating an object of Faculty class
 a = faculty()
+b = faculty()
 a.dispaly()
 
 
