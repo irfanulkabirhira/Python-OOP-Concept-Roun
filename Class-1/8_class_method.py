@@ -1,19 +1,20 @@
-class Stuedent:
-    # Global varibale
-    University = 'NITER'
+'''
+Works on the class itself, not on instances.
+Uses cls as the first parameter to access class variables.
+Defined using the @classmethod decorator
 
-    def __init__(self, name , age):
-        # Local Variable
-        self.name = name # Instane Attribite
+'''
+
+class Student:
+    school = "NITER"  # Class variable (shared by all students)
+
+    def __init__(self, name, age):
+        self.name = name
         self.age = age
 
-    def show(self): # Regular Instance Method
-        print(f"The Univeristy name is : {self.University}")
+    @classmethod
+    def get_school(cls):  # Class method
+        return cls.school  # Accessing class variable
 
-    @classmethod # Class Method
-    def changeUniversity(cls, uni):
-
-
-obj1 = Stuedent('Hira', 25)
-obj1.show()
-
+# Calling class method without creating an instance
+print(Student.get_school())  # ✅ Works because it doesn't depend on an instance
