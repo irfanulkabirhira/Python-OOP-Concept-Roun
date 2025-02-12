@@ -12,6 +12,8 @@ class faculty:
 
 # Creating Object of this faculty Class
 a = faculty()
+
+#Calling this two function 
 a.putdata()
 a.display()
 
