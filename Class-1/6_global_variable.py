@@ -21,13 +21,14 @@ student2.display()
 
 class Student:
     # Global varibale
-    university = "NITER" 
+    university = "NITER" #Class Attribite
+    
     def __init__(self, name , age):
         #local varible or Attribte
-        self.name = name
-        self.age = age
+        self.name = name # instance attribite
+        self.age = age # Instance Attribite
 
-    def display(self):
+    def display(self): #instance Method or regular instnace method
         print(f"Name : {self.name} , Age : {self.age} , Univeristy : {self.university}")
 
 student1 = Student("Hira", 25 )
