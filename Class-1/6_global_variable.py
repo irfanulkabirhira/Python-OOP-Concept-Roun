@@ -21,7 +21,7 @@ student2.display()
 
 class Student:
     # Global varibale
-    university = "NITER"
+    university = "NITER" 
     def __init__(self, name , age):
         #local varible or Attribte
         self.name = name
