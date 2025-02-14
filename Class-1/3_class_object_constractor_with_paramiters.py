@@ -1,3 +1,4 @@
+# Class method Contractor with paramiters
 class student:
     #this init method is called Dender in python
     # Constractor
