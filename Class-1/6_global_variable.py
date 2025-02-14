@@ -22,7 +22,7 @@ student2.display()
 class Student:
     # Global varibale
     university = "NITER" #Class Attribite
-    
+
     def __init__(self, name , age):
         #local varible or Attribte
         self.name = name # instance attribite
@@ -30,6 +30,7 @@ class Student:
 
     def display(self): #instance Method or regular instnace method
         print(f"Name : {self.name} , Age : {self.age} , Univeristy : {self.university}")
+        print(self.name)
 
 student1 = Student("Hira", 25 )
 student2 = Student("Mita", 24)
@@ -37,3 +38,5 @@ student2 = Student("Mita", 24)
 # Calling the Method
 student1.display()
 student2.display()
+# Only to Print Specific Instance Variable
+print(f"Only Printing their name {student1.name}")
