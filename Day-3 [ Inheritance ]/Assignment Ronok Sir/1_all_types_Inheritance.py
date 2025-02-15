@@ -15,7 +15,7 @@ class father(grand_father):
 # Multilevl Inheritance
 class child1(father):
     pass
-class mother(object):
+class mother:
     pass
 # Multiple inheritance # same way this is also hierarchial
 class child1(mother, father):
