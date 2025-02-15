@@ -1,3 +1,4 @@
+#-> hybrid => uporer gular , More than 1 applied hole , Hybrid
 # Base Class 1
 class Person:
     def __init__(self, name, age):
