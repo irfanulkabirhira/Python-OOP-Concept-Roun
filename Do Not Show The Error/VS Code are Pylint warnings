@@ -1,0 +1,26 @@
+== > VS Code are Pylint warnings <==
+
+1) Naming Convention Errors (PascalCase naming style)
+Class name "parent" doesn't conform to PascalCase naming style
+
+2) Name Should Follow snake_case (snake_case naming style)
+"3_Inheritance_parents_adopt_child" doesn't conform to snake_case naming style
+
+To fix this erro ( or Not showing this erro to vs code IDE despite of pylink Warning )
+===> Modify Pylint Configuration in VS Code <<<<<=====
+Step 1 :
+-> Open VS Code.
+-> Go to File → Preferences → Settings (Ctrl + ,)
+-> Search for Pylint Args.
+-> Click "Edit in settings.json".
+-> Add or modify the setting
+
+    "python.linting.pylintArgs": [
+    "--disable=C0114",  // Disable missing module docstring
+    "--disable=C0115",  // Disable missing class docstring
+    "--disable=C0103"   // Disable naming convention errors (snake_case, PascalCase, etc.)
+]
+
+-> Save the file and restart VS Code.
+
+
