@@ -3,6 +3,9 @@
 def setName (self , name):
         self.name = name
 
+Solutaoitn :
+In the son class constructor, I used super().__init__(name, "Unknown") to call the parent father class's constructor properly and assign the name. Since you only need the name and not work for printing, I’ve used "Unknown" as a placeholder.
+
 '''
 
 class father:
