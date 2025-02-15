@@ -1,1 +1,0 @@
-print(f"Name: {self.name}, Age: {self.age}")
