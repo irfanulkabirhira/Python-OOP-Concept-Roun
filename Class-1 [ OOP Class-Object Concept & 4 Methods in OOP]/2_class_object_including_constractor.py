@@ -1,5 +1,6 @@
 # Class Object Including Contractor  :
 
+# Taking Input from User
 class faculty:
     # Constractor ==> this will automatically initialize the method
     def __init__(self):
