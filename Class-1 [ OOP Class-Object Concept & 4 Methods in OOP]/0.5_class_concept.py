@@ -1,5 +1,5 @@
 class hira():
-    # variable or Data 
+    # variable or Data
     a = 10
 
 # Object of this class

@@ -13,8 +13,6 @@ class grand_father:
 class father(grand_father):
     pass
 # Multilevl Inheritance
-class child1(father):
-    pass
 class mother:
     pass
 # Multiple inheritance # same way this is also hierarchial

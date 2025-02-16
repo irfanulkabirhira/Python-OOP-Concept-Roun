@@ -18,4 +18,15 @@ a = faculty()
 b = faculty()
 a.dispaly()
 
+'''
+class hira:
+    def __init__(self, id):
+        self.id = id
+    def display(self):
+        print(f"This {self.id} is Hira's ID ")
 
+object = hira(21)
+object.display()
+
+
+'''
