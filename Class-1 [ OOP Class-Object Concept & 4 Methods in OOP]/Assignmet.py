@@ -5,21 +5,33 @@
     2. Book list
 '''
 
-class Library:
-    # class Attribute
-    Book_list = []
-    def __init__(self, Book_name):
-        self.Book_name = Book_name # Instance Attribute
+# Sir's Solved
+class Library :
+    # Instance Attribite
+    Book = []
+    def __init__(self, nu_book , book_name):
+        self.nu_book = nu_book
+        self.book_name = book_name
+        if self.book_name not in self.Book:
+            self.Book.append(self.book_name)
 
-    def Detail_of_books(self):
-        print(f"Name of the book is = {self.Book_name}")
+    def showbook(self):
+        print(self.Book)
 
-# Creating object of books
-book1 = Library("Hira and Sara's Love Story")
-book1 = Library("Hira and Barsha's Love Story")
+    def add_book(cls , Book):
+        cls.Book = Book
+        
 
-print(" One Book Detail:")
-book1.Detail_of_books()
+b1 = Library(1 , "Hira")
+b2 = Library(2, "Jira")
+
+Library.Book("Kira")
+
+# Task 1
+b1.showbook()
+# show detasils
+print(b1.__dict__)
+
 
 
 
