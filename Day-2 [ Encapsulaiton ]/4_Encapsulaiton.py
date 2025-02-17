@@ -1,5 +1,10 @@
 # But Python Indirectly Access korte dei ==> private class k
-# I can access the private class through ==> _"classname"  [Lol] ==> that's is why python does not follow the Encapsulation Concept properly
+# I can access the private class through ==> _"classname"  [Lol] ==> that's is why python does
+# not follow the Encapsulation Concept properly
+'''
+This is Called ==> Name Manglin==> _"classname"  jetar through te ami private instance a access nite pari 
+
+'''
 class computer :
     def __init__(self):
         self.__processor = 'Corei-9'
