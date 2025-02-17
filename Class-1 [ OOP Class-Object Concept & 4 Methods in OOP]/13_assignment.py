@@ -11,7 +11,8 @@ class Library:
     def showbook(self):
         print(self.Book)
 
-    @classmethod  # Use classmethod decorator
+    # To add new Book in list
+    @classmethod
     def add_book(cls, book_name):
         if book_name not in cls.Book:
             cls.Book.append(book_name)
