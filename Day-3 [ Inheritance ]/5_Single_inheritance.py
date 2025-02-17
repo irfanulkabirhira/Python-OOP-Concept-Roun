@@ -6,6 +6,13 @@ class manager(employee):
     pass
 
 '''
+
+'''
+A preson having name and age attribute , And That person Inherites a student Class
+and stuedent extented his attribute with studen_id ,
+So Now , show the Student Class Details
+
+'''
 # Base Class
 class Person:
     def __init__(self, name, age):

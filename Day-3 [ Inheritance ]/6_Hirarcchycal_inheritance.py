@@ -10,6 +10,17 @@ class Programmer(employee):
     pass
 
 '''
+'''
+A Employ class having name and emoloy_id attribute ,
+->
+And That Employ classed Inherites a HR Class
+having extra attribite Department ,
+->
+same way , Manager , Programmer class having attribite
+(Team_size and Programming_language respectiviely)
+So Now , Show Everyone's details [ HR , Manger and Programmer]
+'''
+
 
 # Base Class - Employee
 class Employee:
