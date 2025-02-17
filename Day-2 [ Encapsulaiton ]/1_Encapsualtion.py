@@ -1,4 +1,4 @@
-# Encapsulation
+# Encapsulation ==> Used Public that is why seller can directly acces the Computer Class too
 
 class Computer:
     def __init__(self):
