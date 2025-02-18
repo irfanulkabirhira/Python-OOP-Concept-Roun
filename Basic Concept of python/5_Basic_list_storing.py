@@ -10,8 +10,11 @@ class Library:
     def showBook(self):
         print(f"Books are :{self.Book} ")
 
-    
+
 
 object1 = Library('Break Up Story', 3)
 
 object1.showBook()
+
+# To see the Details
+print(object1.__dict__)
