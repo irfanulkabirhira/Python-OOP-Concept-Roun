@@ -17,3 +17,4 @@ p2 = Point(4, 5)
 # Using the + operator
 result = p1 + p2  # Calls __add__()
 print(result)  # Output: (6, 8)
+
