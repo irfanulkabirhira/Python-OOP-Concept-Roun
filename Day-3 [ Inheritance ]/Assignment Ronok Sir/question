@@ -1,9 +1,0 @@
-Write a program whre some clases are (grandfather , father , mother , child1 , child2)
-task :
-1) Show all types of Inheritance that can be possible in this scenario
-2) Give everyone a name and Job attribute , But it can be declared at most 2 time .
-Figure out where they should be (jobs : farmer , banker , artist , Teacher , Programmer )
-3) Implemented that grandfather has rented house , father owned one , and show child2 where lived
-4) Father has Skilled attribute of Gardenning and mother has Cooking , These skills are inherited
-and child1 inherites skills of gardeing and child2 Cooking . Implement this
-5) lastly , show child1's and child2's  details
