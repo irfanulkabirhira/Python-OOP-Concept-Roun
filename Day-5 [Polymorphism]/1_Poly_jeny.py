@@ -1,5 +1,6 @@
 
 'So this is polymorpysm , Same funciton having multiple task'
+'Polymorpsym generally use in inheritance , Lol '
 
 # way 1 -->
 print("Firstly ", len("Jeny"))
