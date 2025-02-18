@@ -27,7 +27,7 @@ b2 = Library(2, "Jira")
 Library.add_books("Kira", "Tira", "Mira", "Lira")  # Corrected function call
 
 # Task 1
-b1.showbook()
+b2.showbook()
 
 # Show details
-print(b1.__dict__)  # Shows instance attributes
+# print(b1.__dict__)  # Shows instance attributes
