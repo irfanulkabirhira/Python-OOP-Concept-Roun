@@ -11,7 +11,7 @@ class BookStore:
     def user_choice(self):
         """Function to let the user choose actions dynamically"""
         while True:
-            print("\n📚 Bookstore Menu:")
+            print("📚 Bookstore Menu:")
             print("1. Order a Book")
             print("2. Exit")
 
