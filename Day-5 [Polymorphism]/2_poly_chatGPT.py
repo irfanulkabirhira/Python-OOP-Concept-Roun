@@ -1,13 +1,14 @@
 'Polymorphism with Class Methods'
+# Class 1
 class Cat:
     def speak(self):
         return "Meow"
-
+# Class 2
 class Dog:
     def speak(self):
         return "Woof"
 
-# Function that demonstrates polymorphism
+# Function that demonstrates polymorphism [Different Class]
 def animal_sound(animal):
     print(animal.speak())
 
