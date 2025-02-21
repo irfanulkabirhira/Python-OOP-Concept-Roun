@@ -14,8 +14,10 @@ class student :
 # Creating Two objects for this classes
 s1 = student(40, 60)
 s2 = student(90, 40)
+s3 = student(30, 20)
 
-s3 = s1 + s2
-print(s3.m1)
-print(s3.m2)
+s4 = s1 + s2 +s3
+print(s4.m1)
+print(s4.m2)
+
 
