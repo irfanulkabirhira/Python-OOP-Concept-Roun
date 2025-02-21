@@ -1,37 +1,34 @@
-'''
-ekahne j 2 ta method ache 2 ta kei ami
-over-ride korci
---> make_sound And Leg 
+from abc import ABC, abstractmethod
 
-'''
-
-
-from abc import ABC , abstractmethod
-
-def Animal(ABC):
+# Abstract Class
+class Animal(ABC):
     @abstractmethod
-    def make_sound(self): # Abstract Method
-        pass
-    def leg(self): # Concrete method
+    def make_sound(self):  # Abstract Method
         pass
 
-def Dog(Animal):
+    def leg(self):  # Concrete Method
+        print("Animals have legs")
+
+# Concrete Class Dog
+class Dog(Animal):
     def make_sound(self):
         print("Gheu Gheu !!")
 
-def Cat(Animal):
+# Concrete Class Cat
+class Cat(Animal):
     def make_sound(self):
         print("Meu Meu !!")
 
-    # Mehtod Over-Ridding
+    # Method Overriding
     def leg(self):
-        print("It has 4 Lags")
+        print("It has 4 Legs")
 
-
+# Creating Objects
 animal1 = Cat()
 animal2 = Dog()
 
-animal1.make_sound(Cat)
-animal2.leg()
+# Calling Methods
+animal1.make_sound()  # Output: Meu Meu !!
+animal2.leg()  # Output: Animals have legs
 
-print(isinstance(animal1 , Dog))
+print(isinstance(animal1, Cat))  # Output: True
