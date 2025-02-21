@@ -31,4 +31,5 @@ animal2 = Dog()
 animal1.make_sound()  # Output: Meu Meu !!
 animal2.leg()  # Output: Animals have legs
 
+# To show is this animal1 class is Actually belong to Cat classes !!!
 print(isinstance(animal1, Cat))  # Output: True
