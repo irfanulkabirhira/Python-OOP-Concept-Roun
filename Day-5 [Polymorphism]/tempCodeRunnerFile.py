@@ -10,7 +10,6 @@ class Dog:
 # And pssing an peramiter Animal Here
 def sound_animal(animal):
     print(animal.speak())
-
 cat = Cat()
 dog = Dog()
 
