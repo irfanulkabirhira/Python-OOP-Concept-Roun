@@ -1,4 +1,13 @@
 'Polymorphism with Class Methods'
+'''
+Method Over-ridding ==>
+As you can seee i have used speak funciton for
+for Multiple times
+here Speak funciton same But they are Doing
+differenet taks
+That's why for Speak funtion ==> we can say
+[ method Over-ridding]
+'''
 # Class 1
 class Cat:
     def speak(self):
