@@ -1,30 +1,35 @@
 'Polymorphism with Class Methods'
-'''
-Method Over-ridding ==>
-As you can seee i have used speak funciton for
-for Multiple times
-here Speak funciton same But they are Doing
-differenet taks
-That's why for Speak funtion ==> we can say
-[ method Over-ridding]
-'''
-# Class 1
+
+
 class Cat:
     def speak(self):
-        return "Meow"
-# Class 2
+        return "Hi this , Cat Meu Meu !!!"
 class Dog:
     def speak(self):
-        return "Woof"
+        return "Hello This is Dog , gheu Ghue !!!"
 
-# Function that demonstrates polymorphism [Different Class]
-def animal_sound(animal):
+# For Both of the Class i am Creatng an Common method name==> Sound_Animal
+# And pssing an peramiter Animal Here
+def sound_animal(animal):
     print(animal.speak())
 
-# Creating objects
+
 cat = Cat()
 dog = Dog()
 
-# Calling the same method on different classes
-animal_sound(cat)  # Output: Meow
-animal_sound(dog)  # Output: Woof
+sound_animal(cat)
+# method Over_ridding
+sound_animal(dog)
+
+
+'''
+I can Show this like as well
+----------------------------------
+def sound_animal(animal):
+    animal.speaK()
+
+
+sound_animal(cat)
+sound_animal(dog)
+
+'''

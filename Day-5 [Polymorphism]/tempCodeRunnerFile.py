@@ -1,22 +1,18 @@
-class Book:
-    def _init_(self, title, page):
-        self.title = title
-        self.page = page
 
-    def details(self):
-        print(self.title)
-        print(self.page)
+class Cat:
+    def speak(self):
+        return "Hi this , Cat Meu Meu !!!"
+class Dog:
+    def speak(self):
+        return "Hello This is Dog , gheu Ghue !!!"
 
-    def _add_(self,other):
-        total = self.page + other.page
-        return Book('all book', total)
+# For Both of the Class i am Creatng an Common method name==> Sound_Animal
+# And pssing an peramiter Animal Here
+def sound_animal(animal):
+    print(animal.speak())
 
-    def _str_(self):
-        return str(self.page)
+cat = Cat()
+dog = Dog()
 
-
-b1 = Book('A',10)
-b2 = Book('B',20)
-b3 = Book('C',10)
-
-print("Total no of pages: ",b1+b2+b3)
+sound_animal(cat)
+sound_animal(dog)

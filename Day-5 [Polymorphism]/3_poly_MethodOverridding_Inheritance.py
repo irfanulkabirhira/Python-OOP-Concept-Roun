@@ -1,4 +1,5 @@
-'Method Overriding in Inheritance'
+
+# Method Overriding in Inheritance
 class Animal:
     def speak(self):
         return "Some sound"
@@ -17,7 +18,10 @@ animal = Animal()
 cat = Cat()
 dog = Dog()
 
-# Calling the overridden method
+# Calling the overridden method  ==> this is Method Over-ridding Concept
 print(animal.speak())  # Output: Some sound
 print(cat.speak())     # Output: Meow
 print(dog.speak())     # Output: Woof
+
+
+
