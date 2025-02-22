@@ -14,5 +14,6 @@ class Book:
 b1 = Book('A', 10)
 b2 = Book('B', 20)
 b3 = Book('C', 10)
+s=b1+b2+b3
 
-print("Total no of pages:", (b1 + b2 + b3).page)  # Access the 'page' attribute of the resulting Book object
+print("Total no of pages:", s.page)  # Access the 'page' attribute of the resulting Book object
