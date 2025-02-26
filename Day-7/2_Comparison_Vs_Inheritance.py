@@ -1,4 +1,3 @@
-'Comparison Vs Inheritance '
 class Engine:
     def __init__(self , cc):
         self.capactity = cc
@@ -12,16 +11,19 @@ class Car(Engine):
     def __init__(self, cc , name):
         super().__init__(cc)
         self.name = name
+        # Has a comparison
+        self.engine = Engine(cc)
     def run(self):
+        self.engine.start()
         print ("Car is Running")
+        self.engine.stopped()
 
 c1 = Car(2000, "BMW")
-c1.start()
 c1.run()
-c1.stopped()
 
 '''
-So . is this Actually Logical ??? How is this possoble that car is inherited from Engine ???
-No right !!!
+So . is this Actually Logical Now ,
+Sometimes we can Say that , inheritanc always won't work accurately
+I used ==>  Comparison (has a engine )
 
 '''
