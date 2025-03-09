@@ -1,4 +1,4 @@
-# This will Available Books Before Ordering The book
+# This will show Available Books Before Ordering The book
 
 """The join() function is used to convert a list of strings into a single string, where each element is separated by a specified delimiter. """
 

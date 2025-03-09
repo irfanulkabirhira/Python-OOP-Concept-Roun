@@ -1,20 +1,19 @@
+# ai bar Library er Daitte achi ==> So ami book push korbo Library er list e
 class Library:
-    Book = []
-    def __init__(self , BookName , Nu_Book):
-        self.BookName = BookName
-        self.Nu_Book = Nu_Book
-        if self.BookName not in self.Book:
-            self.Book.append(self.BookName)
+    Book=['hira']
+    def __init__(self,Book_name , pages):
+        self.Book_name =Book_name
+        self.pages=pages
+        if self.Book_name not in Library.Book:
+            self.Book.append(Book_name)
+        else:
+            print (f"This {self.Book_name} is Already In the List")
+    def show(self):
+        print(f"Book name : {self.Book_name}\nPages : {self.pages}\nBook list is : {Library.Book}")
 
-
-    def showBook(self):
-        print(f"Books are :{self.Book}\nNumber of Books based on this topic:{self.Nu_Book} ")
-
-
-object1 = Library('Break Up Story',  3)
-object1 = Library("Life is okay ", 34)
-
-object1.showBook()
-
-# To see the Details
-print(object1.__dict__)
+print("------Welcome to the Library------------")
+obj=Library('hira',23)
+obj1=Library('Hala', 23)
+obj2=Library('Mira',23)
+#Printing the Obj1 Book
+obj1.show()
