@@ -15,17 +15,17 @@ class BookStore:
         """Admin feature to add a new book to the store."""
         if book_name not in self.books:
             self.books.append(book_name)
-            print(f"✅ The book '{book_name}' has been added successfully!")
+            return f"✅ The book '{book_name}' has been added successfully!"
         else:
-            print(f"⚠️ The book '{book_name}' is already in the store.")
+            return f"⚠️ The book '{book_name}' is already in the store."
 
     def remove_book(self, book_name):
         """Admin feature to remove a book from the store."""
         if book_name in self.books:
             self.books.remove(book_name)
-            print(f"🗑️ The book '{book_name}' has been removed.")
+            return f"🗑️ The book '{book_name}' has been removed."
         else:
-            print(f"⚠️ The book '{book_name}' is not available in the store.")
+            return f"⚠️ The book '{book_name}' is not available in the store."
 
     def view_books(self):
         """Displays all available books."""
@@ -53,11 +53,11 @@ class BookStore:
 
             elif choice == "2":
                 book_name = input("Enter the new book name to add: ").strip().lower()
-                self.add_book(book_name)
+                print(self.add_book(book_name))
 
             elif choice == "3":
                 book_name = input("Enter the book name to remove: ").strip().lower()
-                self.remove_book(book_name)
+                print(self.remove_book(book_name))
 
             elif choice == "4":
                 print("Thank you for visiting the Bookstore! 📖✨")
